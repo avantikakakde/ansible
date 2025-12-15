@@ -1,0 +1,10 @@
+---
+- name: install tree package
+  hosts: localhost 
+  tasks:
+  - name: install tree
+    ansible.bulitin.dnf:
+     name: tree #package name 
+     state: present #to insatll any software
+    
+  
